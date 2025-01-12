@@ -64,6 +64,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@repo/tailwind-config':
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -76,9 +79,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
-      tailwind:
-        specifier: link:..\..\packages\tailwind
-        version: link:../../packages/tailwind
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -90,13 +90,13 @@ importers:
         specifier: ^20
         version: 20.17.6
       '@types/react':
-        specifier: 18.3.1
+        specifier: ^18.3.1
         version: 18.3.1
       '@types/react-dom':
-        specifier: 18.3.0
-        version: 18.3.0
+        specifier: ^18.3.0
+        version: 18.3.1
       typescript:
-        specifier: 5.5.4
+        specifier: ^5.5.4
         version: 5.5.4
 
   packages/eslint-config:
@@ -147,9 +147,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
-      tailwind:
-        specifier: link:..\tailwind
-        version: link:../tailwind
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
