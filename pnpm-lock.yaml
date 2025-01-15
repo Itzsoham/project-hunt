@@ -24,6 +24,8 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
+  apps/server: {}
+
   apps/web:
     dependencies:
       '@radix-ui/react-label':
@@ -119,6 +121,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@radix-ui/react-label':
+        specifier: ^2.1.1
+        version: 2.1.1(@types/react-dom@18.3.1)(@types/react@18.3.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-slot':
         specifier: ^1.1.1
         version: 1.1.1(@types/react@18.3.0)(react@19.0.0)
